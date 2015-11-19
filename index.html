@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>info form</title>
+	</head>
+	<body>
+		<form method="post" action="info.php" style="width: 700px; margin: auto">
+			<fieldset>
+				<legend><h1>Info Form</h1></legend>
+				<table>
+					<tr>
+						<td><label for="fullname">Fullname: </label></td>
+						<td><input required type="text" name="fullname" id="fullname" placeholder="Fullname"></td>
+					</tr>
+					<tr>
+						<td><label for="password">Password: </label></td>
+						<td><input required type="password" name="password" id="password" placeholder="Password"></td>
+					</tr>
+					<tr>
+						<td><label for="gender">Gender: </label></td>
+						<td id="gender">
+							<label for="male"><input type="radio" name="gender" id="male" value="Male">Male </label>
+							<label for="female"><input type="radio" name="gender" id="female" value="Female">Female </label>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="locations">Location: </label></td>
+						<td>
+							<input list="location" name="location" id="locations" placeholder="Location">
+							<datalist id="location">
+								<option>Phnom Penh</option>
+								<option selected >Battombong</option>
+							</datalist>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="email">E-mail: </label></td>
+						<td><input required type="text" name="email" id="email" placeholder="Not include @???.com"></td>
+					</tr>
+					<tr>
+						<td><label for="emailType">Type: </label></td>
+						<td id="emailType">
+							<label for="gmail"><input type="radio" name="emailType" id="gmail" value="@gmail.com">@gmail.com </label>
+							<label for="hotmail"><input type="radio" name="emailType" id="hotmail" value="@hotmail.com ">@hotmail.com </label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="reset" value="Cancel">
+							<input type="submit" name="submit" value="Submit">
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</body>
+</html>
